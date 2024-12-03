@@ -1,9 +1,9 @@
 # 1 
 import numpy as np
 
-m = np.loadtxt("Игнатенко_Дарья_Даниловна_У-243_vvod.txt", dtype='i', delimiter=',')
+m = np.loadtxt("python/z_10_arh/Игнатенко_Дарья_Даниловна_У-243_vvod.txt", dtype='i', delimiter=',')
 
-with open('Игнатенко_Дарья_Даниловна_У-243_vvod.txt', 'r') as file:
+with open('python/z_10_arh/Игнатенко_Дарья_Даниловна_У-243_vvod.txt', 'r') as file:
     n = sum(1 for line in file)
  
 for i in range(n):
@@ -13,7 +13,7 @@ for row in m:
     print( row, sep='\t' )
 
 # 2
-m = np.loadtxt("Игнатенко_Дарья_Даниловна_У-243_vvod.txt", dtype='i', delimiter=',')
+m = np.loadtxt("python/z_10_arh/Игнатенко_Дарья_Даниловна_У-243_vvod.txt", dtype='i', delimiter=',')
 
 matrix = np.array(m)
 
@@ -33,7 +33,7 @@ print(matrix)
 d_e =str(diagonal_elements)
 t =str(trace)
 mat =str(matrix)
-with open("Игнатенко_Дарья_Даниловна_У-243_vivod.txt", "w") as file:
+with open("python/z_10_arh/Игнатенко_Дарья_Даниловна_У-243_vivod.txt", "w") as file:
     file.write(d_e)
     file.write("\n")
     file.write(t)
