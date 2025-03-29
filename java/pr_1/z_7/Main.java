@@ -16,6 +16,5 @@ public class Main {
         }
         String result = String.join(" ", uniqueWords);
         System.out.println("Строка без повторяющихся слов: " + result);
-        scanner.close();
     }
 }
