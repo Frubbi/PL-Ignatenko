@@ -7,11 +7,9 @@ import java.util.Scanner;
 
 public class Main {
     private List<Integer> numbers;
-
     public Main() {
         numbers = new ArrayList<>();
     }
-
     public void addNumber(int number) {
         if (numbers.size() < 3) {
             numbers.add(number);
@@ -23,19 +21,15 @@ public class Main {
         }
         printNumbers();
     }
-
     private int findMinIndex() {
         return numbers.indexOf(Collections.min(numbers));
     }
-
     private void printNumbers() {
         System.out.println("Текущие числа в ячейке: " + numbers);
     }
-
     public static void main(String[] args) {
         Main memoryCell = new Main();
         Scanner scanner = new Scanner(System.in);
-
         while (true) {
             System.out.print("Введите число (или 'exit' для выхода): ");
             String input = scanner.nextLine();
@@ -49,6 +43,5 @@ public class Main {
                 System.out.println("Пожалуйста, введите корректное число.");
             }
         }
-        scanner.close();
     }
 }
