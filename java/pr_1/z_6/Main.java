@@ -5,10 +5,10 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Scanner;
 
-public class MemoryCell {
+public class Main {
     private List<Integer> numbers;
 
-    public MemoryCell() {
+    public Main() {
         numbers = new ArrayList<>();
     }
 
@@ -33,7 +33,7 @@ public class MemoryCell {
     }
 
     public static void main(String[] args) {
-        MemoryCell memoryCell = new MemoryCell();
+        Main memoryCell = new Main();
         Scanner scanner = new Scanner(System.in);
 
         while (true) {
